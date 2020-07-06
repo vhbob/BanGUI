@@ -1,0 +1,19 @@
+name: GUIBan
+version: 1.0
+author: vhbob
+description: Ban users using a simple GUI
+main: com.vhbob.bangui.BanGUI
+commands:
+  GUIBan:
+    aliases: [BanGUI, gban]
+    description: Ban a user, broadcasting the length and reason
+    permission: ban.gui
+  SBan:
+    aliases: [SilentBan, BanSilent]
+    description: Ban a user, without broadcasting the ban info
+    permission: sban.gui
+  History:
+    aliases: [BanHist, ModHist]
+    description: view the history of a user's bans, mutes, and kicks
+    permission: history.view
+depends: [Essentials]
